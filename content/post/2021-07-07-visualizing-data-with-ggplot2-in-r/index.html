@@ -1,0 +1,99 @@
+---
+title: Visualizing Data with ggplot2 in R
+author: Matthew Van Huffel
+date: '2021-07-07'
+slug: []
+categories: []
+tags:
+  - R
+  - ggplot2
+  - data science
+  - visualization
+ShowToc: true
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="summary" class="section level2">
+<h2>Summary</h2>
+<p>This post will walk you through how to visualize various types of data through ggplot2.</p>
+<hr />
+</div>
+<div id="the-dataset" class="section level2">
+<h2>The dataset</h2>
+<p>First we need to load the tidyverse package in order to gain access to ggplot2 and other functions and datasets.</p>
+<pre><code>library(tidyverse)
+-- Attaching packages ----------------------- tidyverse 1.3.1 --
+v ggplot2 3.3.5     v purrr   0.3.4
+v tibble  3.1.2     v dplyr   1.0.7
+v tidyr   1.1.3     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.1
+-- Conflicts -------------------------- tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()</code></pre>
+<p>Below we’ll load some data on gold prices taken from <a href="https://datahub.io/">datahub.io</a>.</p>
+<pre><code>gold &lt;- read.csv(&quot;C:\\Users\\Mtvan\\Desktop\\GoldPrices.csv&quot;, fileEncoding = &quot;UTF-8-BOM&quot;)</code></pre>
+<p>A brief look at what the data looks like.</p>
+<pre><code>head(gold)
+
+year    price
+2014    1200.440
+2015    1068.317
+2016    1152.165
+2017    1265.674
+2018    1249.887
+2019    1480.025</code></pre>
+</div>
+<div id="creating-a-ggplot" class="section level2">
+<h2>Creating a ggplot</h2>
+<p>Every plot starts with the <code>ggplot()</code> function, where you then supply a dataset and aesthetic mapping with <code>aes()</code>. Various layers can be added like <code>geom_point()</code>, which adds a layer of points to the graph and creates a scatter plot. The x and y arguments tell ggplot which variables to map to the x and y axes.</p>
+<p>To plot the data, we run the following code with year on the x-axis, and price on the y-axis.</p>
+<pre><code>ggplot(gold, aes(x=year, y=price)) +
+    geom_point()</code></pre>
+<p><img src="images/GoldPrices.png" /></p>
+</div>
+<div id="aesthetic-mapping" class="section level2">
+<h2>Aesthetic Mapping</h2>
+<p>Other variables, like market sentiment, can be added to a two dimensional scatterplot by mapping it to an aesthetic (a visual property of the objects in the plot). Aesthetics can range anywhere from size, shape, and even color of the points.</p>
+<pre><code>ggplot(data = gold) +
+    geom_point(mapping = aes(x = year, y = price, color = sentiment))</code></pre>
+<p><img src="images/GoldSentiment.png" /></p>
+<p>To do this, we associate the name of the aesthetic to the name of the variable inside the <code>aes()</code> fucntion. ggplot2 will automatically assign a unique color of the aesthetic to each unique value (called scaling), while also creating a legend to explain which colors correspond to which values.</p>
+<p>If you don’t want a legend you can add the following at the end. Be sure to add a <code>,</code> at the end of the line instead of a <code>+</code>.</p>
+<pre><code>show.legend = FALSE</code></pre>
+<p>You can also manually set the aesthetic properties of the geom manually.</p>
+<pre><code>ggplot(data = gold) +
+    geom_point(mapping = aes(x = year, y= price, color = &quot;red&quot;)</code></pre>
+<p><img src="images/GoldColorRed.png" /></p>
+<p>Another possible aesthetic is size. Note you’ll receive a warning if you map an unordered variable (market sentiment) to an ordered aesthetic (size).</p>
+<pre><code>ggplot(data= gold) +
+    geom_point(mapping = aes(x = year, y = price, size = sentiment))
+Warning message:
+Using size for a discrete variable is not advised. </code></pre>
+<p><img src="images/GoldSize.png" /></p>
+<p>Alpha aesthetic:</p>
+<pre><code>ggplot(data = gold) +
+    geom_point(mapping = aes(x = year, y = price, alpha = sentiment))</code></pre>
+<p><img src="images/GoldAlpha.png" /></p>
+</div>
+<div id="facets" class="section level2">
+<h2>Facets</h2>
+<p>You can split your plot into facets, which will create subplots and divide your data into individual subsets.</p>
+<pre><code>ggplot(data = gold) + 
+  geom_point(mapping = aes(x = year, y = price)) + 
+  facet_wrap(~ sentiment, nrow = 2)</code></pre>
+<p><img src="images/GoldFacets.png" /></p>
+</div>
+<div id="geometric-objects" class="section level2">
+<h2>Geometric Objects</h2>
+<p>The geoms are what determine how ggplot will visually represent your data. There are dozens of geoms available in ggplot2, and even more if you download additional extensions. <a href="https://www.rstudio.com/resources/cheatsheets/">Rstudio</a> also offers some cheatsheets for quick references.</p>
+<pre><code>ggplot(data = gold) + 
+  geom_smooth(mapping = aes(x = year, y = price))</code></pre>
+<p><img src="images/GoldSmooth.png" /></p>
+<p>To display multiple geoms in one plot, add multiple geom functions.</p>
+<pre><code>ggplot(data = gold) + 
+  geom_point(mapping = aes(x = year, y = price)) +
+  geom_smooth(mapping = aes(x = year, y = price))</code></pre>
+<p><img src="images/MultipleGeomsGold.png" /></p>
+</div>

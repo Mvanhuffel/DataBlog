@@ -1,0 +1,101 @@
+baseURL: "https://example.org"
+title: FINLYZING
+paginate: 5
+theme: hugo-PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+# googleAnalytics: UA-123-45
+
+minify:
+    disableXML: true
+    # minifyOutput: true
+menu:
+  main:
+    - name: About
+      url: /about/
+    - name: Archive
+      url: /archive/
+      
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+  
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "Theme PaperMod - https://github.com/mvanhuffel"
+    author:
+    # author: ["Me", "You"] # multiple authors
+
+    profileMode:
+        enabled: false
+        title: PaperMod
+        imageUrl: "#"
+        imageTitle: my image
+        # imageWidth: 120
+        # imageHeight: 120
+        buttons:
+            - name: Archives
+              url: archives
+            - name: Tags
+              url: tags
+
+    homeInfoParams:
+        Title: "Welcome"
+        Content: >
+            **Finlyzing** is a data analysis website for technical analysis with a focus on daytrading and swing trading.
+             I create data analyses and publish articles on various trading topics.
+    socialIcons:
+        - name: github
+          url: "https://github.com/mvanhuffel"
+        - name: discord
+          url: "https://discord.com"
+        - name: linkedin
+          url: "https://linkedin.com"
+
+taxonomies:
+    category: categories
+    tag: tags
+    series: series
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         # noClasses: false
+#         style: monokai
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
