@@ -9,7 +9,12 @@ tags:
   - ggplot2
   - data science
   - visualization
-ShowToc: true
+ShowToc: false
+TocOpen: false
+cover:
+  image: images/grph.jpg
+  # imageWidth: 120
+  # imageHeight: 120
 ---
 
 ## Summary
@@ -64,7 +69,7 @@ ggplot(gold, aes(x=year, y=price)) +
 
 
 
-![](images/GoldPrices.png)
+![](images/GoldPrices.png#center)
 
 ## Aesthetic Mapping
 
@@ -77,7 +82,7 @@ ggplot(data = gold) +
 
 
 
-![](images/GoldSentiment.png)
+![](images/GoldSentiment.png#center)
 
 To do this, we associate the name of the aesthetic to the name of the variable inside the ```aes()``` fucntion. ggplot2 will automatically assign a unique color of the aesthetic to each unique value (called scaling), while also creating a legend to explain which colors correspond to which values.
 
@@ -93,7 +98,7 @@ ggplot(data = gold) +
     geom_point(mapping = aes(x = year, y= price, color = "red")
 ```    
 
-![](images/GoldColorRed.png)
+![](images/GoldColorRed.png#center)
 
 Another possible aesthetic is size. Note you'll receive a warning if you map an unordered variable (market sentiment) to an ordered aesthetic (size).
 
@@ -106,7 +111,7 @@ Using size for a discrete variable is not advised.
 
 
 
-![](images/GoldSize.png)
+![](images/GoldSize.png#center)
 
 
 Alpha aesthetic:
@@ -117,7 +122,7 @@ ggplot(data = gold) +
 
 
 
-![](images/GoldAlpha.png)
+![](images/GoldAlpha.png#center)
 
 ## Facets
 
@@ -127,7 +132,7 @@ ggplot(data = gold) +
   geom_point(mapping = aes(x = year, y = price)) + 
   facet_wrap(~ sentiment, nrow = 2)
 ```
-![](images/GoldFacets.png)
+![](images/GoldFacets.png#center)
 
 ## Geometric Objects
 
@@ -140,7 +145,7 @@ ggplot(data = gold) +
 
 
 
-![](images/GoldSmooth.png)
+![](images/GoldSmooth.png#center)
 
 To display multiple geoms in one plot, add multiple geom functions. 
 
@@ -150,4 +155,4 @@ ggplot(data = gold) +
   geom_smooth(mapping = aes(x = year, y = price))
 ```
 
-![](images/MultipleGeomsGold.png)
+![](images/MultipleGeomsGold.png#center)

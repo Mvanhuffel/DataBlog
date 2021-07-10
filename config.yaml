@@ -1,7 +1,8 @@
-baseURL: "https://example.org"
+baseURL: "https://finlyzing.netlify.app/"
 title: FINLYZING
 paginate: 5
 theme: hugo-PaperMod
+
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -20,6 +21,9 @@ menu:
       url: /about/
     - name: Archive
       url: /archive/
+    - name: Tags
+      url: /tags/
+
       
 outputs:
     home:
@@ -32,6 +36,11 @@ params:
     description: "Theme PaperMod - https://github.com/mvanhuffel"
     author:
     # author: ["Me", "You"] # multiple authors
+    ShowShareButtons: true
+    ShowBreadCrumbs: true
+    comments: true
+    disableThemeToggle: true
+    defaultTheme: light
 
     profileMode:
         enabled: false
@@ -58,6 +67,8 @@ params:
           url: "https://discord.com"
         - name: linkedin
           url: "https://linkedin.com"
+        - name: email
+          url: "mailto:mav4@pdx.edu"
 
 taxonomies:
     category: categories
