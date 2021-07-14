@@ -1,5 +1,5 @@
-baseURL: "https://finlyzing.netlify.app/"
-title: FINLYZING
+baseURL: "https://finlyzing.com/"
+title: Finlyzing
 paginate: 5
 theme: hugo-PaperMod
 
@@ -10,19 +10,27 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
-# googleAnalytics: UA-123-45
+
+googleAnalytics: UA-123-45
 
 minify:
     disableXML: true
-    # minifyOutput: true
+    minifyOutput: true
+
 menu:
   main:
     - name: About
       url: /about/
-    - name: Archive
+      weight: 10
+    - name: Posts
       url: /archive/
+      weight: 20
     - name: Tags
       url: /tags/
+      weight: 30
+    - name: Search
+      url: /search/
+      weight: 40
 
       
 outputs:
@@ -32,34 +40,38 @@ outputs:
         - JSON
   
 params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    env: production
     description: "Theme PaperMod - https://github.com/mvanhuffel"
-    author:
-    # author: ["Me", "You"] # multiple authors
-    ShowShareButtons: true
+    author: Matthew Van Huffel
+    ShowShareButtons: false
     ShowBreadCrumbs: true
+    ShowPostNavLinks: false
+    ShowCodeCopyButtons: true
     comments: true
     disableThemeToggle: true
     defaultTheme: light
+    ShowReadingTime: true
+    Keyword: [Blog, Data Analysis, Finance]
+    showtoc: false
+    tocopen: false
+    DateFormat: "January 2, 2006"
+    disableAnchoredHeadings: true
 
-    profileMode:
-        enabled: false
-        title: PaperMod
-        imageUrl: "#"
-        imageTitle: my image
-        # imageWidth: 120
-        # imageHeight: 120
-        buttons:
-            - name: Archives
-              url: archives
-            - name: Tags
-              url: tags
+    assets:
+        favicon: "/favicon.ico"
+        favicon16x16: "/favicon-16x16.png"
+        favicon32x32: "/favicon-32x32.png"
+        apple_touch_icon: "/apple-touch-icon.png"
+    
+    label:
+        icon: "/favicon.ico"
+        iconHeight: 35
 
     homeInfoParams:
-        Title: "Welcome"
+        Title: ""
         Content: >
-            **Finlyzing** is a data analysis website for technical analysis with a focus on daytrading and swing trading.
-             I create data analyses and publish articles on various trading topics.
+            This is the hopepage and blog of Matthew Van Huffel. For more about me, [**see here**](/about).
+    
     socialIcons:
         - name: github
           url: "https://github.com/mvanhuffel"
@@ -69,11 +81,12 @@ params:
           url: "https://linkedin.com"
         - name: email
           url: "mailto:mav4@pdx.edu"
-
+          
 taxonomies:
     category: categories
     tag: tags
     series: series
+
 
 markup:
     goldmark:

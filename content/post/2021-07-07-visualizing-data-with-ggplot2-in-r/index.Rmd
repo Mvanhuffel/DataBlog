@@ -1,5 +1,5 @@
 ---
-title: Visualizing Data with ggplot2 in R
+title: Visualizing Data with ggplot2 in R (Part 1)
 author: Matthew Van Huffel
 date: '2021-07-07'
 slug: []
@@ -11,21 +11,28 @@ tags:
   - visualization
 ShowToc: false
 TocOpen: false
+comments: true
 cover:
-  image: images/grph.jpg
+  image: images/ggplot2.jpg
   # imageWidth: 120
   # imageHeight: 120
 ---
 
 ## Summary
 
-This post will walk you through how to visualize various types of data through ggplot2.
+This post will quickly walk you through the basics on how to visualize your data using ggplot2. The gg stands for the grammar of graphics, and each plot is composed of three fundamental parts: 
+
+***Data***: Your data frame.
+
+***Aesthetics***: The x and y variables, as well as any other aesthetic configurations (color, size, shape, etc.).
+
+***Geometry***: The type of graph you wish to visualize your data as (line, box plot, histogram, etc.).
 
 ------------------------
 
 ## The dataset
 
-First we need to load the tidyverse package in order to gain access to ggplot2 and other functions and datasets. 
+First we need to load the tidyverse package in order to gain access to ggplot2 and other functions. 
 
 
 ```
@@ -39,7 +46,7 @@ v readr   1.4.0     v forcats 0.5.1
 x dplyr::filter() masks stats::filter()
 x dplyr::lag()    masks stats::lag()
 ```
-Below we'll load some data on gold prices taken from [datahub.io](https://datahub.io/).
+Next load your data. For this example, we'll load some data on gold prices taken from [datahub.io](https://datahub.io/).
 ```
 gold <- read.csv("C:\\Users\\Mtvan\\Desktop\\GoldPrices.csv", fileEncoding = "UTF-8-BOM")
 ```
@@ -57,9 +64,9 @@ year	price
 ```
 ## Creating a ggplot
 
-Every plot starts with the ```ggplot()``` function, where you then supply a dataset and aesthetic mapping with ```aes()```. Various layers can be added like ```geom_point()```, which adds a layer of points to the graph and creates a scatter plot. The x and y arguments tell ggplot which variables to map to the x and y axes.
+To start a plot, we write ```ggplot()```, after which we supply a dataset and aesthetic mapping using ```aes()```. To finish we input our preferred geometry, like ```geom_point()```, which adds a layer of points to the graph and creates a scatter plot.
 
-To plot the data, we run the following code with year on the x-axis, and price on the y-axis.
+To plot our gold data, we run the following code with year on the x-axis, and price on the y-axis.
 
 
 ```
@@ -70,10 +77,13 @@ ggplot(gold, aes(x=year, y=price)) +
 
 
 ![](images/GoldPrices.png#center)
+To save a plot to disk, use `ggsave()`.
 
 ## Aesthetic Mapping
 
-Other variables, like market sentiment, can be added to a two dimensional scatterplot by mapping it to an aesthetic (a visual property of the objects in the plot). Aesthetics can range anywhere from size, shape, and even color of the points.
+Other variables from your data frame can be added to the two dimensional scatterplot by mapping it to the aesthetic. Aesthetics can range anywhere from size, shape, or even color of the points.
+
+To do this, we associate the name of the aesthetic to the name of the variable inside the ```aes()``` function. ggplot2 will automatically assign a unique color of the aesthetic to each unique value (called scaling), while also creating a legend to explain which colors correspond to which values.
 
 ```
 ggplot(data = gold) +
@@ -83,15 +93,12 @@ ggplot(data = gold) +
 
 
 ![](images/GoldSentiment.png#center)
-
-To do this, we associate the name of the aesthetic to the name of the variable inside the ```aes()``` fucntion. ggplot2 will automatically assign a unique color of the aesthetic to each unique value (called scaling), while also creating a legend to explain which colors correspond to which values.
-
-If you don't want a legend you can add the following at the end. Be sure to add a ```,``` at the end of the line instead of a ```+```. 
+If we don't want a legend we can add the following. Be sure to add a `,` at the end of the line instead of a `+`. 
 ```
 show.legend = FALSE
 ```
 
-You can also manually set the aesthetic properties of the geom manually. 
+We can also manually set the aesthetic properties of the geom like so.  
 
 ```
 ggplot(data = gold) +
@@ -100,7 +107,7 @@ ggplot(data = gold) +
 
 ![](images/GoldColorRed.png#center)
 
-Another possible aesthetic is size. Note you'll receive a warning if you map an unordered variable (market sentiment) to an ordered aesthetic (size).
+Another possible aesthetic is size. We get a warning here since we mapped an unordered variable to an ordered aesthetic, which isn't usually recommended. 
 
 ```
 ggplot(data= gold) +
@@ -114,7 +121,7 @@ Using size for a discrete variable is not advised.
 ![](images/GoldSize.png#center)
 
 
-Alpha aesthetic:
+***Alpha*** aesthetic:
 ```
 ggplot(data = gold) +
     geom_point(mapping = aes(x = year, y = price, alpha = sentiment))
@@ -126,7 +133,7 @@ ggplot(data = gold) +
 
 ## Facets
 
-You can split your plot into facets, which will create subplots and divide your data into individual subsets. 
+We can also split our plot into facets, which will create subplots and divide our data into individual subsets. 
 ```
 ggplot(data = gold) + 
   geom_point(mapping = aes(x = year, y = price)) + 
@@ -136,7 +143,7 @@ ggplot(data = gold) +
 
 ## Geometric Objects
 
-The geoms are what determine how ggplot will visually represent your data. There are dozens of geoms available in ggplot2, and even more if you download additional extensions. [Rstudio](https://www.rstudio.com/resources/cheatsheets/) also offers some cheatsheets for quick references. 
+The geoms are what determine how ggplot will visually represent our data. There are dozens of geoms available in ggplot2, and even more if you download additional extensions. [Rstudio](https://www.rstudio.com/resources/cheatsheets/) also offers some cheatsheets for quick references. 
 
 ```
 ggplot(data = gold) + 
@@ -147,7 +154,7 @@ ggplot(data = gold) +
 
 ![](images/GoldSmooth.png#center)
 
-To display multiple geoms in one plot, add multiple geom functions. 
+To display multiple geoms in one plot, we can add multiple geom functions. 
 
 ```
 ggplot(data = gold) + 
@@ -156,3 +163,4 @@ ggplot(data = gold) +
 ```
 
 ![](images/MultipleGeomsGold.png#center)
+
