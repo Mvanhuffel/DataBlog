@@ -65,12 +65,12 @@ params:
     
     label:
         icon: "/favicon.ico"
-        iconHeight: 35
+        iconHeight: 25
 
     homeInfoParams:
         Title: ""
         Content: >
-            This is the hopepage and blog of Matthew Van Huffel. For more about me, [**see here**](/about).
+            This is the homepage and blog of Matthew Van Huffel. For more about me, [**see here**](/about).
         
     socialIcons:
         - name: github
