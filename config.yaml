@@ -75,12 +75,12 @@ params:
     socialIcons:
         - name: github
           url: "https://github.com/mvanhuffel"
+        - name: linkedin
+          url: "https://linkedin.com/in/matthew-vanhuffel/"
         - name: discord
           url: "https://discord.com"
-        - name: linkedin
-          url: "https://linkedin.com"
         - name: email
-          url: "mailto:mav4@pdx.edu"
+          url: "mailto:finlyzing@gmail.com"
           
 taxonomies:
     category: categories

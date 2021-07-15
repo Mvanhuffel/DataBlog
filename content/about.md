@@ -2,12 +2,11 @@
 title:
 ShowReadingTime: false
 hidemeta: true
-ShowShareButtons: false
 ---
 
 ## About Me
 
-My interests include day trading, statistics, data analysis, and programming in R and Python. I received a BS in Microbiology from Portland State University. 
+Vivamus id congue ex. Integer ut sem turpis. In in justo at turpis dignissim euismod id sed magna. Fusce feugiat rhoncus nulla sit amet pulvinar. Pellentesque mollis at ipsum non scelerisque. Vivamus ipsum nisl, porttitor nec sem tincidunt, iaculis facilisis dui. Duis sollicitudin dictum purus hendrerit lobortis. Maecenas volutpat est sed diam hendrerit elementum.
 
 ## Books
 
