@@ -2,6 +2,7 @@
 title:
 ShowReadingTime: false
 hidemeta: true
+comments: false
 ---
 
 ## About Me
