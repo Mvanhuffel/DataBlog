@@ -16,6 +16,8 @@ minify:
     disableXML: true
     minifyOutput: true
 
+disqusShortname: 
+
 menu:
   main:
     - name: About
@@ -50,7 +52,7 @@ params:
     disableThemeToggle: true
     defaultTheme: light
     ShowReadingTime: true
-    Keyword: [Blog, Data Analysis, Finance]
+    Keyword: [Blog, Data Analysis, Finance, Trading, Stock Market, SPY]
     showtoc: false
     tocopen: false
     DateFormat: "January 2, 2006"
@@ -63,8 +65,9 @@ params:
         apple_touch_icon: "/apple-touch-icon.png"
     
     label:
-        icon: "/favicon.ico"
-        iconHeight: 25
+        text: " "
+        icon: "/logo.png"
+        iconHeight: 60
 
     homeInfoParams:
         Title: ""
