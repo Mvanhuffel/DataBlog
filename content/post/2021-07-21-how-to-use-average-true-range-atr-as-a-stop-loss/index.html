@@ -9,6 +9,7 @@ tags:
   - indicator
   - trading
   - ATR
+  - guide
 ShowToc: false
 TocOpen: false
 comments: true
@@ -25,17 +26,20 @@ summary: A quick demonstration on how to use ATR to set a stop loss during a tra
 
 <div id="what-is-atr" class="section level2">
 <h2>What is ATR?</h2>
-<p>ATR essentially measures how much a given security moves during your employed time period. If you’re on the 1 minute time frame and ATR is 0.08, then the price of that security is moving about 8 cents per minute. I won’t go into too much detail since there are better resources for that elsewhere, but if you’re curious, <a href="https://www.investopedia.com/terms/a/atr.asp">Investopedia</a> has a more in depth explanation.</p>
+<p>ATR essentially measures how much a given security moves during your employed time period. If you’re on the 1 minute time frame and ATR is 0.08, then the price of that security is moving about 8 cents per minute. If you’re still curious, <a href="https://www.investopedia.com/terms/a/atr.asp">Investopedia</a> has a more in depth explanation.</p>
 </div>
 <div id="how-to-use-atr" class="section level2">
 <h2>How to use ATR</h2>
 <p>Take the current value of ATR and multiply it by 3, then subtract that number from the current price of the security. That’s your stop loss. I say 3 in this example but the risk factor is up to you. Somewhere between 2.5-3.5 is generally the specified factor of choice, however this can change depending on the volatility of the security. A security with greater volatility may require a larger risk factor since the price has a greater chance to make larger swings. Finally, be careful not to set your stop loss too close to the current price, or you risk activating your stop price prematurely.</p>
-<p><img src="Images/exampleatr2.png" /></p>
-<pre><code>Price: 434.96
-ATR: 0.18
+<p><img src="Images/exampleatr.png" /></p>
+<div id="example" class="section level4">
+<h4>Example:</h4>
+<pre><code>Price: 434.95
+ATR: 0.09
 Risk factor: 3
-Stop-loss: 434.96-(0.18*3) = 434.42</code></pre>
-<p>In this example, the price of SPY is $434.96. Using the current value of ATR at the time, 0.18, we get a stop loss of $434.42.</p>
+Stop-loss: 434.95-(0.09*3) = 434.67</code></pre>
+<p>Here the price of SPY is $434.95. Using the current value of ATR at the time, 0.09, we get a stop loss of $434.67.</p>
+</div>
 </div>
 <div id="why-use-atr" class="section level2">
 <h2>Why use ATR?</h2>
