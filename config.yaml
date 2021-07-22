@@ -1,5 +1,5 @@
 baseURL: "https://finlyzing.com/"
-title: Finlyzing
+title: finlyzing
 paginate: 5
 theme: hugo-PaperMod
 
