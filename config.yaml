@@ -11,8 +11,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 
-googleAnalytics: UA-123-45
-
+googleAnalytics: "UA-123-45"
 minify:
     disableXML: true
     minifyOutput: true
@@ -70,7 +69,7 @@ params:
     homeInfoParams:
         Title: ""
         Content: >
-            This is the homepage and blog of Matthew Van Huffel. For more about me, [**see here**](/about).
+            This is the homepage and blog of Matthew Van Huffel. I cover topics related to data analytics and finance. For more about me, [**see here**](/about).
         
     socialIcons:
         - name: github
