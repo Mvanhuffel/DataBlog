@@ -16,7 +16,7 @@ minify:
     disableXML: true
     minifyOutput: true
 
-disqusShortname: 
+disqusShortname: finlyzing-com
 
 menu:
   main:
