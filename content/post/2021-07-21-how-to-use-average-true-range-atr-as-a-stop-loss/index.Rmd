@@ -29,6 +29,10 @@ Here's a previous of what the indicator can look like. As you can tell, the valu
 
 ![](images/Atrprev.png)
 
+## Why use ATR?
+
+ATR allows you to set a more dynamic stop loss by taking a security's volatility into consideration in order to decrease the chance of getting stopped out by random noise. Using ATR to create your stop loss will not only help prevent getting stopped out of a trade prematurely but still input a certain level of protection into it as well. 
+
 ## How to use ATR
 
 > **Stop-loss = Price - (ATR * Risk Factor)**
@@ -52,11 +56,6 @@ Stop-loss: 434.95-(0.09*3) = 434.67
 ![](images/exampleatr.png)
 
 Here the price of SPY is $434.95. Using the current value of ATR at the time, 0.09, we get a stop loss of $434.67. 
-
-
-## Why use ATR?
-
-ATR allows you to set a more dynamic stop loss by taking a security's current volatility into consideration. As a result, the indicator will help prevent getting stopped out of a trade prematurely while still inputting a certain level of protection into it. 
 
 ## Considerations
 
