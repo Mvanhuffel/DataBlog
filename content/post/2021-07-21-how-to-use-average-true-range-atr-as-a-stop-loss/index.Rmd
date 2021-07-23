@@ -27,13 +27,13 @@ ATR essentially measures how much a given security moves during your employed ti
 
 ## How to use ATR
 
-**Stop-loss = Price - (ATR * Risk Factor)**
+> **Stop-loss = Price - (ATR * Risk Factor)**
 
-Take the current value of ATR and multiply it by 3, then subtract that number from the current price of the security. That's your stop loss. 
+Take the value of ATR and multiply it by 3, then subtract that number from the current price of the security. That's your stop loss. 
 
-I say 3 in this example but the risk factor is up to you. Somewhere between 2.5-3.5 is generally the specified factor of choice, however this can change depending on the volatility of the security. 
+I say 3 in this example but the risk factor is up to you. Somewhere between 1-3.5 is generally the specified factor of choice, and is largely dependent on the volatility of the security, your employed time frame, and your own risk tolerance.
 
-A security with greater volatility may require a larger risk factor since the price has a greater chance to make larger swings. Finally, be careful not to set your stop loss too close to the current price, or you risk activating your stop price prematurely. 
+However, be careful not to set your stop loss too close to the current price, or you risk activating your stop price prematurely. 
 
 #### Example:
 
@@ -53,3 +53,7 @@ Here the price of SPY is $434.95. Using the current value of ATR at the time, 0.
 ## Why use ATR?
 
 ATR allows you to set a more dynamic stop loss by taking a security's current volatility into consideration. As a result, the indicator will help prevent getting stopped out of a trade prematurely while still inputting a certain level of protection into it. 
+
+## Considerations
+
+The point in time at which you take your ATR value is important and I recommend to experiment to see what works for you. Some people prefer taking the ATR value at the previous candle's closing price, but this may differ from trader to trader. Just be sure to collect the ATR value on the same time frame you plan to trade on. 
