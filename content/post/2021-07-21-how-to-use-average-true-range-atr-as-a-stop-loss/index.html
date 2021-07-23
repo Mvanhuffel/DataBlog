@@ -26,7 +26,7 @@ summary: A quick demonstration on how to use ATR to set a stop loss during a tra
 
 <div id="what-is-atr" class="section level2">
 <h2>What is ATR?</h2>
-<p>ATR essentially measures how much a given security moves during your employed time period. If you’re on the 1 minute time frame and ATR is 0.08, then the price of that security is moving about 8 cents per minute. If you’re still curious, <a href="https://www.investopedia.com/terms/a/atr.asp">Investopedia</a> has a more in depth explanation.</p>
+<p>ATR is an indicator that essentially measures how much a given security moves during your employed time period. If you’re on the 1 minute time frame and ATR is 0.08, then the price of that security is moving about 8 cents per minute. If you’re still curious, <a href="https://www.investopedia.com/terms/a/atr.asp">Investopedia</a> has a more in-depth explanation.</p>
 </div>
 <div id="how-to-use-atr" class="section level2">
 <h2>How to use ATR</h2>
@@ -34,7 +34,7 @@ summary: A quick demonstration on how to use ATR to set a stop loss during a tra
 <p><strong>Stop-loss = Price - (ATR * Risk Factor)</strong></p>
 </blockquote>
 <p>Take the value of ATR and multiply it by 3, then subtract that number from the current price of the security. That’s your stop loss.</p>
-<p>I say 3 in this example but the risk factor is up to you. Somewhere between 1-3.5 is generally the specified factor of choice, and is largely dependent on the volatility of the security, your employed time frame, and your own risk tolerance.</p>
+<p>I say 3 in this example but the risk factor is up to you. Somewhere between 1-3.5 is generally the specified factor of choice and is largely dependent on the volatility of the security, your employed time frame, and your own risk tolerance.</p>
 <p>However, be careful not to set your stop loss too close to the current price, or you risk activating your stop price prematurely.</p>
 <div id="example" class="section level4">
 <h4>Example:</h4>
@@ -52,5 +52,5 @@ Stop-loss: 434.95-(0.09*3) = 434.67</code></pre>
 </div>
 <div id="considerations" class="section level2">
 <h2>Considerations</h2>
-<p>The point in time at which you take your ATR value is important and I recommend to experiment to see what works for you. Some people prefer taking the ATR value at the previous candle’s closing price, but this may differ from trader to trader. Just be sure to collect the ATR value on the same time frame you plan to trade on.</p>
+<p>The point in time at which you take your ATR value is important and I recommend experimenting to see what works for you. Some people prefer taking the ATR value at the previous candle’s closing price, but this may differ from trader to trader. Just be sure to collect the ATR value in the same time frame you plan to trade on.</p>
 </div>
