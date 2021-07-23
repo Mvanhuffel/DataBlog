@@ -30,8 +30,10 @@ summary: A quick demonstration on how to use ATR to set a stop loss during a tra
 </div>
 <div id="how-to-use-atr" class="section level2">
 <h2>How to use ATR</h2>
-<p>Stop-loss = Price - (ATR * Risk Factor)</p>
-<p><strong>Take the current value of ATR and multiply it by 3, then subtract that number from the current price of the security.</strong> That’s your stop loss. I say 3 in this example but the risk factor is up to you. Somewhere between 2.5-3.5 is generally the specified factor of choice, however this can change depending on the volatility of the security. A security with greater volatility may require a larger risk factor since the price has a greater chance to make larger swings. Finally, be careful not to set your stop loss too close to the current price, or you risk activating your stop price prematurely.</p>
+<p><strong>Stop-loss = Price - (ATR * Risk Factor)</strong></p>
+<p>Take the current value of ATR and multiply it by 3, then subtract that number from the current price of the security. That’s your stop loss.</p>
+<p>I say 3 in this example but the risk factor is up to you. Somewhere between 2.5-3.5 is generally the specified factor of choice, however this can change depending on the volatility of the security.</p>
+<p>A security with greater volatility may require a larger risk factor since the price has a greater chance to make larger swings. Finally, be careful not to set your stop loss too close to the current price, or you risk activating your stop price prematurely.</p>
 <div id="example" class="section level4">
 <h4>Example:</h4>
 <pre><code>Price: 434.95

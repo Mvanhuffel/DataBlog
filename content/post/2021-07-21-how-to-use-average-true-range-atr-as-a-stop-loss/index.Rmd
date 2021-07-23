@@ -27,9 +27,13 @@ ATR essentially measures how much a given security moves during your employed ti
 
 ## How to use ATR
 
-Stop-loss = Price - (ATR * Risk Factor)
+**Stop-loss = Price - (ATR * Risk Factor)**
 
-**Take the current value of ATR and multiply it by 3, then subtract that number from the current price of the security.** That's your stop loss. I say 3 in this example but the risk factor is up to you. Somewhere between 2.5-3.5 is generally the specified factor of choice, however this can change depending on the volatility of the security. A security with greater volatility may require a larger risk factor since the price has a greater chance to make larger swings. Finally, be careful not to set your stop loss too close to the current price, or you risk activating your stop price prematurely. 
+Take the current value of ATR and multiply it by 3, then subtract that number from the current price of the security. That's your stop loss. 
+
+I say 3 in this example but the risk factor is up to you. Somewhere between 2.5-3.5 is generally the specified factor of choice, however this can change depending on the volatility of the security. 
+
+A security with greater volatility may require a larger risk factor since the price has a greater chance to make larger swings. Finally, be careful not to set your stop loss too close to the current price, or you risk activating your stop price prematurely. 
 
 #### Example:
 

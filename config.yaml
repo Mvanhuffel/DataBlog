@@ -44,7 +44,7 @@ params:
     env: production
     description: "Theme PaperMod - https://github.com/mvanhuffel"
     author: Matthew Van Huffel
-    ShowShareButtons: true
+    ShowShareButtons: false
     ShowBreadCrumbs: true
     ShowPostNavLinks: false
     ShowCodeCopyButtons: true
@@ -66,8 +66,8 @@ params:
     
     label:
         text: " "
-        icon: "/logo.png"
-        iconHeight: 60
+        icon: "/logo2.png"
+        iconHeight: 50
 
     homeInfoParams:
         Title: ""
