@@ -45,7 +45,7 @@ Stop-loss: 434.95-(0.09*3) = 434.67
 ```
  
 
-![](images/exampleatr.png){width=800px height=350px}
+![](images/exampleatr.png)
 
 Here the price of SPY is $434.95. Using the current value of ATR at the time, 0.09, we get a stop loss of $434.67. 
 
