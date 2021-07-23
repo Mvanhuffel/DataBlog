@@ -31,7 +31,7 @@ Here's a previous of what the indicator can look like. As you can tell, the valu
 
 ## Why use ATR?
 
-ATR allows you to set a more dynamic stop loss by taking a security's volatility into consideration in order to decrease the chance of getting stopped out by random noise. Using ATR to create your stop loss will not only help prevent getting stopped out of a trade prematurely but still input a certain level of protection into it as well. 
+ATR allows you to set a more dynamic stop loss by taking a security's volatility into consideration. Using ATR to create your stop loss will help prevent getting stopped out of a trade prematurely by random noise, while still giving you the added security that a traditional stop-loss offers. 
 
 ## How to use ATR
 
