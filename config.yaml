@@ -44,7 +44,7 @@ params:
     env: production
     description: "Theme PaperMod - https://github.com/mvanhuffel"
     author: Matthew Van Huffel
-    ShowShareButtons: false
+    ShowShareButtons: true
     ShowBreadCrumbs: true
     ShowPostNavLinks: false
     ShowCodeCopyButtons: true
