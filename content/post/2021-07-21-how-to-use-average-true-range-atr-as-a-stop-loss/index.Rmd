@@ -23,7 +23,7 @@ summary: A quick demonstration on how to use ATR to set a stop loss during a tra
 
 ## What is ATR?
 
-ATR is an indicator that essentially measures how much a given security moves during your employed time period. If you're on the 1 minute time frame and ATR is 0.13, then the price of that security is moving about 13 cents per minute. However, the value of ATR will change as the volatility of the underlying security changes throughout the day.
+ATR is a volatility indicator that essentially measures how much a given security moves during your employed time period. If you're on the 1 minute time frame and ATR is 0.13, then the price of that security is moving about 13 cents per minute. However, the value of ATR will change as the volatility of the underlying security changes throughout the day.
 
 
 ![](images/Atrprev.png)
@@ -52,6 +52,7 @@ Price: 434.95
 ATR: 0.09
 Risk factor: 3
 Stop-loss: 434.95-(0.09*3) = 434.67
+
 ```
  
 
