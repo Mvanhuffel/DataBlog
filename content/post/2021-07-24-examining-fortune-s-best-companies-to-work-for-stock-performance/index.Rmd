@@ -1,0 +1,15 @@
+---
+title: Examining Fortune's Best Companies to Work For Stock Performance
+author: ''
+date: '2021-07-24'
+slug: []
+categories: []
+tags: []
+---
+
+Every year fortune publishes the 100 best companies to work for in the U.S. If you're interested in their methodology, you can read about it [here](https://fortune.com/franchise-list-page/best-companies-2021-methodology/)
+
+## Summary
+
+## The Data
+
