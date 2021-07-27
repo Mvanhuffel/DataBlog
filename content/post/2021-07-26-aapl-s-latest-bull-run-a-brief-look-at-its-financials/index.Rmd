@@ -16,7 +16,7 @@ cover:
   # imageWidth: 120
   # imageHeight: 120
 hideSummary: false
-summary: Exploring Apple's outlook over the next year.
+summary: Analyzing Apple's earnings and extreme expectations. A look at previous years and what's to come. 
 ---
 
 AAPL's forward P/E ratio at the time of this post is 27.40 [(source)](https://finance.yahoo.com/quote/AAPL/key-statistics/), which is well above its 5 year average of 19.7. In other words, the stock is being priced a lot higher compared to how the market has valued it in recent years. AAPL is also extended in comparison to MSFT which is trading at 1.08 x 5yr average versus AAPL at 1.57 x 5 yr average. 
