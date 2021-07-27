@@ -25,16 +25,17 @@ AAPL's forward P/E ratio at the time of this post is 27.40 [(source)](https://fi
 ![](images/PEcombo2.png)
 </center>
 
-The latest bull run has added a ~21% increase to the stock's price since early June, no doubt with high expectations riding behind it. Since the start of 2021, AAPL's revenues have beaten earnings estimates by an average of $10.2 billion per quarter. Fiscal third quarter average estimates are $73.44 billion, a ~23% increase from September of last year. 
+The latest bull run has added a ~21% increase to the stock's price since early June, no doubt with high expectations riding behind it.
+
+![6M:1D](images/graph2.png)
+
+Since the start of 2021, AAPL's revenues have beaten earnings estimates by an average of $10.2 billion per quarter. Fiscal third quarter average estimates are $73.44 billion, a ~23% increase from September of last year. 
+
+![](images/graph4.png)
 
 
-![6 month: 1 day](images/aapl6mo.png)
 
-
-
-
-
-Looking at its adjusted earnings, we can see steady growth which has fueled the stock's dividend growth and appreciation in its stock price. 
+Looking at its adjusted earnings, we can see steady growth which has fueled the stock's dividend growth and appreciation in its stock price as well. 
 
 <center>
 ![Earnings per Share](images/EPS.png)
@@ -45,7 +46,7 @@ Regardless the current price is trading roughly at 33 times its trailing 12 mont
 
 On the flip side, if earnings this quarter are a disappointment, we will no doubt see a swift return to the downside. How far that is is up for debate.
 
-![4 month: 1 day](images/aapl6mo2.png)
+![1Y:1D](images/graph3.png)
 
 On the daily, the price is quite extended from the 50 moving average and it could find support somewhere between the 50 and 100 MA, possibly around $135. 
 
