@@ -63,8 +63,7 @@ year    price
 <p>To plot our gold data, we run the following code with year on the x-axis, and price on the y-axis.</p>
 <pre><code>ggplot(gold, aes(x=year, y=price)) +
     geom_point()</code></pre>
-<p><img src="images/GoldPrices.png#center" />
-To save a plot to disk, use <code>ggsave()</code>.</p>
+<p><img src="images/GoldPrices.png#center" /></p>
 </div>
 <div id="aesthetic-mapping" class="section level2">
 <h2>Aesthetic Mapping</h2>
@@ -72,8 +71,7 @@ To save a plot to disk, use <code>ggsave()</code>.</p>
 <p>To do this, we associate the name of the aesthetic to the name of the variable inside the <code>aes()</code> function. ggplot2 will automatically assign a unique color of the aesthetic to each unique value (called scaling), while also creating a legend to explain which colors correspond to which values.</p>
 <pre><code>ggplot(data = gold) +
     geom_point(mapping = aes(x = year, y = price, color = sentiment))</code></pre>
-<p><img src="images/GoldSentiment.png#center" />
-If we don’t want a legend we can add the following. Be sure to add a <code>,</code> at the end of the line instead of a <code>+</code>.</p>
+<p><img src="images/GoldSentiment.png#center" /></p>
 <pre><code>show.legend = FALSE</code></pre>
 <p>We can also manually set the aesthetic properties of the geom like so.</p>
 <pre><code>ggplot(data = gold) +
@@ -109,4 +107,20 @@ Using size for a discrete variable is not advised. </code></pre>
   geom_point(mapping = aes(x = year, y = price)) +
   geom_smooth(mapping = aes(x = year, y = price))</code></pre>
 <p><img src="images/MultipleGeomsGold.png#center" /></p>
+</div>
+<div id="additional-tips" class="section level2">
+<h2>Additional Tips</h2>
+<ul>
+<li><p>If one of your variables contains a space in the name, surround it with <code>``</code> (e.g. <code>`data`</code>) to avoid errors.</p></li>
+<li><p>You can add a title to your plot with</p></li>
+</ul>
+<pre><code>ggtitle(&quot;title&quot;)</code></pre>
+<ul>
+<li>You can remove a legend from a plot with</li>
+</ul>
+<pre><code>theme(legend.position = &quot;none&quot;)</code></pre>
+<ul>
+<li>You can save a plot to disk with</li>
+</ul>
+<pre><code>ggsave()</code></pre>
 </div>

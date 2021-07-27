@@ -69,7 +69,7 @@ year	price
 
 To start a plot, we write ```ggplot()```, after which we supply a dataset and aesthetic mapping using ```aes()```. To finish we input our preferred geometry, like ```geom_point()```, which adds a layer of points to the graph and creates a scatter plot.
 
-To plot our gold data, we run the following code with year on the x-axis, and price on the y-axis.
+To plot our gold data, we run the following code with year on the x-axis, and price on the y-axis. 
 
 
 ```
@@ -80,7 +80,6 @@ ggplot(gold, aes(x=year, y=price)) +
 
 
 ![](images/GoldPrices.png#center)
-To save a plot to disk, use `ggsave()`.
 
 ## Aesthetic Mapping
 
@@ -96,7 +95,6 @@ ggplot(data = gold) +
 
 
 ![](images/GoldSentiment.png#center)
-If we don't want a legend we can add the following. Be sure to add a `,` at the end of the line instead of a `+`. 
 ```
 show.legend = FALSE
 ```
@@ -167,3 +165,22 @@ ggplot(data = gold) +
 
 ![](images/MultipleGeomsGold.png#center)
 
+## Additional Tips
+
+- If one of your variables contains a space in the name, surround it with ` `` ` (e.g. `` `data` ``) to avoid errors. 
+
+- You can add a title to your plot with
+```
+ggtitle("title")
+```
+
+- You can remove a legend from a plot with
+
+```
+theme(legend.position = "none")
+```
+
+- You can save a plot to disk with
+```
+ggsave()
+```

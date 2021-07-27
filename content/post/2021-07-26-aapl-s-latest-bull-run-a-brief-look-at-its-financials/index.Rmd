@@ -1,0 +1,53 @@
+---
+title: AAPL's Latest Bull Run - A Brief Look at its Financials
+author: ''
+date: '2021-07-26'
+slug: []
+categories: []
+tags: 
+  - strategy
+  - analysis
+  - trading
+ShowToc: false
+TocOpen: false
+comments: true
+cover:
+  image: images/logo.jpg
+  # imageWidth: 120
+  # imageHeight: 120
+hideSummary: false
+summary: Exploring Apple's outlook over the next year.
+---
+
+AAPL's forward P/E ratio at the time of this post is 27.40 [(source)](https://finance.yahoo.com/quote/AAPL/key-statistics/), which is well above its 5 year average of 19.7. In other words, the stock is being priced a lot higher compared to how the market has valued it in recent years. AAPL is also extended in comparison to MSFT which is trading at 1.08 x 5yr average versus AAPL at 1.57 x 5 yr average. 
+
+<center>
+![](images/PEcombo2.png)
+</center>
+
+The latest bull run has added a ~21% increase to the stock's price since early June, no doubt with high expectations riding behind it. Since the start of 2021, AAPL's revenues have beaten earnings estimates by an average of $10.2 billion per quarter. Fiscal third quarter average estimates are $73.44 billion, a ~23% increase from September of last year. 
+
+
+![6 month: 1 day](images/aapl6mo.png)
+
+
+
+
+
+Looking at its adjusted earnings, we can see steady growth which has fueled the stock's dividend growth and appreciation in its stock price. 
+
+<center>
+![Earnings per Share](images/EPS.png)
+</center> 
+
+
+Regardless the current price is trading roughly at 33 times its trailing 12 months earnings, a significant increase to what it was just a few years ago. Assuming it's long term earnings power continues to materially improve, we may see a continuing rally as the stock moves towards new all time highs. This is assuming the Fed and other central banks remain accommodating for the foreseeable future. Any type of changes like rate hikes would have significant impacts on the market, which I doubt AAPL would be immune to. 
+
+On the flip side, if earnings this quarter are a disappointment, we will no doubt see a swift return to the downside. How far that is is up for debate.
+
+![4 month: 1 day](images/aapl6mo2.png)
+
+On the daily, the price is quite extended from the 50 moving average and it could find support somewhere between the 50 and 100 MA, possibly around $135. 
+
+Either way, expectations are very high right now as we approach earnings. AAPL will need to prove the iPhone super cycle has continued alongside a strong report, as well as management showcasing a bright future ahead for upcoming fall product launches. 
+
