@@ -167,7 +167,7 @@ ggplot(data = gold) +
 
 ## Additional Tips
 
-- If one of your variables contains a space in the name, surround it with ` `` ` (e.g. `` `data` ``) to avoid errors. 
+- If one of your variables contains a space in the name, surround it with ` `` ` (e.g. `` `new data` ``) to avoid errors. 
 
 - You can add a title to your plot with
 ```

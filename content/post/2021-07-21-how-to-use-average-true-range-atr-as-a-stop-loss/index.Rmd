@@ -1,5 +1,5 @@
 ---
-title: How to use Average True Range (ATR) as a Stop Loss
+title: Upgrade your Stop-Loss with Average True Range (ATR)
 author: Matthew Van Huffel
 date: '2021-07-21'
 slug: []
