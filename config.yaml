@@ -42,7 +42,7 @@ outputs:
   
 params:
     env: production
-    description: "Theme PaperMod - https://github.com/mvanhuffel"
+    description: "Blog on finance, technical analysis, and education."
     author: Matthew Van Huffel
     ShowShareButtons: false
     ShowBreadCrumbs: true
