@@ -72,7 +72,7 @@ params:
     homeInfoParams:
         Title: ""
         Content: >
-            This is the homepage and blog of Matthew Van Huffel. I am a market enthusiast and part-time trader. I cover topics related to technical analysis and finance. For more about me, [**see here**](/about).
+            This is the homepage and blog of Matthew Van Huffel. I'm a market enthusiast and part-time trader. I cover topics related to technical analysis and finance. For more about me, [**see here**](/about).
         
     socialIcons:
         - name: github
