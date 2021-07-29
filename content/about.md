@@ -5,8 +5,6 @@ hidemeta: true
 comments: false
 ---
 
-## This Page is Under Construction
-
 
 ## About This Site
 
